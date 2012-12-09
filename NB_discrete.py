@@ -75,9 +75,8 @@ def predict(x, y, new_obs):
 
     Output:
     The output is a list with index 0 equal to the class with the
-    highest probability. Index 1 is a list of lists containing
-    attribute-probability pairs in the same order that the attributes
-    appear in the original data.
+    highest probability and index 1 equal to a list of lists containing
+    class-probability pairs.
 
     Example:
 
@@ -138,9 +137,6 @@ print pred[1]
     are determined one rule: if state1 == state4, then
     the class is equal to the value of state1 and state4. Otherwise,
     the class value is 4. State2 and state3 are just noise.
-
-    So, if new_obs above was equal to ['2','3','2','3'], then
-    pred[0] would return 4.'''
 
     data = fit_model(x, y)
     class_names = data[0]
