@@ -136,7 +136,7 @@ print pred[1]
     and the class can take values 1, 2, 3, or 4.The class values
     are determined one rule: if state1 == state4, then
     the class is equal to the value of state1 and state4. Otherwise,
-    the class value is 4. State2 and state3 are just noise.
+    the class value is 4. State2 and state3 are just noise.'''
 
     data = fit_model(x, y)
     class_names = data[0]
